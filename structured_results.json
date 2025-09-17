@@ -1,0 +1,24 @@
+[
+  {
+    "conversation": [
+      {
+        "user": "Hi, I want to cancel my subscription."
+      },
+      {
+        "bot": "Sure, share your subscription ID."
+      },
+      {
+        "user": "SUB6789"
+      },
+      {
+        "bot": "Cancellation processed."
+      }
+    ],
+    "status_code": 200,
+    "structured_data": {
+      "intent": "cancel_subscription",
+      "subscription_id": "SUB6789",
+      "outcome": "success"
+    }
+  }
+]

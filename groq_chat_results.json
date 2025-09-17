@@ -1,0 +1,74 @@
+[
+  {
+    "conversation": [
+      {
+        "user": "Hi, I want to cancel my subscription."
+      },
+      {
+        "bot": "Sure, share your subscription ID."
+      },
+      {
+        "user": "SUB6789"
+      },
+      {
+        "bot": "Cancellation processed."
+      }
+    ],
+    "status_code": 200,
+    "response": "Here is the processed conversation:\n\n```json\n{\n  \"summary\": \"The user requested to cancel their subscription and provided their subscription ID (SUB6789). The bot processed the cancellation.\",\n  \"classification\": \"Customer Support - Subscription Cancellation\",\n  \"structured_data\": {\n    \"intent\": \"cancel_subscription\",\n    \"subscription_id\": \"SUB6789\",\n    \"outcome\": \"success\"\n  }\n}\n```\n\nLet me explain the values:\n\n* **summary**: A brief summary of the conversation.\n* **classification**: A categorization of the conversation topic (Customer Support) and the specific issue (Subscription Cancellation).\n* **structured_data**: A JSON object containing specific data points extracted from the conversation:\n\t+ **intent**: The user's intention (cancel_subscription).\n\t+ **subscription_id**: The subscription ID provided by the user (SUB6789).\n\t+ **outcome**: The result of the cancellation request (success)."
+  },
+  {
+    "conversation": [
+      {
+        "user": "My order arrived damaged."
+      },
+      {
+        "bot": "I'm sorry to hear that. Can you send a photo?"
+      },
+      {
+        "user": "Sent the photo."
+      },
+      {
+        "bot": "We will replace it and send return instructions."
+      }
+    ],
+    "status_code": 200,
+    "response": "Here is the processed conversation:\n\n```json\n{\n  \"summary\": \"The user reported that their order arrived damaged. The bot apologized, requested a photo of the damage, and promised to replace the order and send return instructions.\",\n  \"classification\": \"Customer Support - Order Issue\",\n  \"structured_data\": {\n    \"issue\": \"damaged order\",\n    \"resolution\": \"replacement and return instructions\",\n    \"steps\": [\n      {\n        \"step\": \"report issue\",\n        \"speaker\": \"user\"\n      },\n      {\n        \"step\": \"request photo\",\n        \"speaker\": \"bot\"\n      },\n      {\n        \"step\": \"send photo\",\n        \"speaker\": \"user\"\n      },\n      {\n        \"step\": \"promise replacement and return instructions\",\n        \"speaker\": \"bot\"\n      }\n    ]\n  }\n}\n```"
+  },
+  {
+    "conversation": [
+      {
+        "user": "What time does your support close?"
+      },
+      {
+        "bot": "We operate 24/7."
+      }
+    ],
+    "status_code": 200,
+    "response": "Here is the processed conversation:\n\n```json\n{\n  \"summary\": \"The user asked about the support hours and the bot replied that support operates 24/7.\",\n  \"classification\": \"Support Inquiry\",\n  \"structured_data\": {\n    \"support_hours\": {\n      \"type\": \"24/7\",\n      \"description\": \"Support is available 24 hours a day, 7 days a week\"\n    }\n  }\n}\n```\n\nLet me know if you'd like me to process more conversations!"
+  },
+  {
+    "conversation": [
+      {
+        "user": "Hey, I need help with my order."
+      },
+      {
+        "bot": "Sure! Can you share your order ID?"
+      },
+      {
+        "user": "It's ORD12345."
+      },
+      {
+        "bot": "Thanks! I see your order is being processed and will be shipped soon."
+      },
+      {
+        "user": "Great, also can I change the address?"
+      },
+      {
+        "bot": "Yes, you can update the address within 24 hours of placing the order."
+      }
+    ],
+    "status_code": 200,
+    "response": "Here is the processed conversation in the requested JSON format:\n\n```\n{\n  \"summary\": \"User needs help with their order (ORD12345), checks on shipping, and requests to change the address.\",\n  \"classification\": \"Customer Support - Order Inquiry/Update\",\n  \"structured_data\": {\n    \"order_id\": \"ORD12345\",\n    \"order_status\": \"being processed\",\n    \"shipping_status\": \"will be shipped soon\",\n    \"address_change_requested\": true,\n    \"address_change_allowed\": true,\n    \"timeframe_for_address_change\": \"within 24 hours of placing the order\"\n  }\n}\n```\n\nLet me know if you'd like me to add or modify anything!"
+  }
+]
